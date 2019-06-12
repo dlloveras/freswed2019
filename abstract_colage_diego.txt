@@ -1,0 +1,10 @@
+Type: Poster
+
+Author: Diego G. Lloveras, Cecilia Mac Cormack, Alberto M. Vásquez, Federico A. Nuevo, Ward Manchester IV, Bartholomeus Van der Holst, Richard A. Frazin.
+
+Title: Temperature and Electron Density in the Inner Solar Corona: a Global Validation of the AWSoM Model with Observations.
+
+In order to advance our understanding the physics of the solar corona and the solar wind, magnetohydrodynamic (MHD) three-dimensional (3D) models need to be validated with observations. To that end, differential emission measure tomography (DEMT) is a valuable tool to study the inner corona (1.0-1.25 Rsun). In that region DEMT provides global 3D maps of two fundamental plasma parameters: the electron density and temperature. We developed DEMT reconstructions and MHD modeling of two specific solar rotations selected from the last two solar minima. The MHD simulations were carried out using the latest version of the  Alfvén Wave Solar Model (AWSoM) of the Space Weather Modeling Framework (SWMF). In this work we present the first DEMT validation study of the latest AWSoM simulations, with particular focus on different types of temperature structures observed within the streamer belt. The comparison, here focused on solar minima due to the relative simplicity of the large scale corona, will be extended in the future to periods of higher activity.
+
+
+
