@@ -1,0 +1,12 @@
+ABSTRACT for freswed2019
+
+POSTER
+
+Author: D.G. Lloveras(1), C. Mac Cormack(19, A.M. Vásquez(1), N. Sachdeva(2), W. Manchester IV(2), B. Van der Holst(2), R.A. Frazin(2).
+
+(1) IAFE (UBA-CONICET), Ciudad Autonoma de Buenos Aires, Argentina.
+(2) CLaSP (Univ. of Michigan), Ann Arbor - Michigan, EEUU.
+
+Title: Thermodynamics of the Inner Solar Corona: A Tomographic Validation Study of the AWSoM Model.
+
+To advance the understanding of the physics of the solar corona, magnetohydrodynamic (MHD) three-dimensional (3D) models need to be validated with observations. To that end, differential emission measure tomography (DEMT) provides global 3D maps of the electron density and temperature in the inner corona (1.0-1.25 Rsun). In combination with models of the coronal magnetic field, it allows estimating the energy input flux required at the coronal base to maintain thermodynamically stable coronal structures. Hence, the DEMT analysis can be useful to tune up the model's Alfven wave amplitudes and dissipation rates. Here, a DEMT validation study of the latest version of the  Alfvén Wave Solar Model (AWSoM) of the Space Weather Modeling Framework (SWMF) is reported. The analysis is carried out for Carrington rotations selected from the previous solar minimum and the current declining phase of solar cycle 24. The capability of the model to reproduce the tomographic products is discussed, and the need for improvements in the model is evaluated.
