@@ -1,4 +1,4 @@
-\documentclass[paperwidth=100cm,paperheight=120cm]{baposter_2}
+\documentclass[paperwidth=100cm,paperheight=120cm]{baposter}
 %\documentclass[a0,portrait,final]{baposter_old}
 %\documentclass[a4shrink,portrait,final]{baposter}
 %\documentclass[a0,landscape,final]{baposter}
@@ -15,13 +15,11 @@
 
 \usepackage{times}
 \usepackage{calc}
-%\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{relsize}
 %\usepackage{multirow}
 \usepackage{bm}
-\usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{pgfbaselayers}
 \pgfdeclarelayer{background}
@@ -34,6 +32,7 @@
 \selectcolormodel{cmyk}
 \graphicspath{{images/}}
 
+\newcommand{\DT}{\Delta T}
 % Some math symbols used in the text
 \newcommand{\Matrix}[1]{\begin{bmatrix} #1 \end{bmatrix}}
 \newcommand{\Vector}[1]{\Matrix{#1}}
@@ -117,8 +116,6 @@
 \def\verde#1{\textcolor{green}{#1}}
 \def\orange#1{\textcolor{orange}{#1}}
 \def\bL{{\bf L}}
-\newcommand{\DT}{\Delta T}
-
 
 \def\bazul#1{\textcolor{blue}{\bf\tt #1}}
 \def\brojo#1{\textcolor{red}{\bf\tt #1}}
@@ -173,7 +170,7 @@
 
 \background{
   \begin{tikzpicture}[remember picture,overlay]
-    \draw (current page.north west)+(-2em,2em) node[anchor=north west]{\includegraphics[height=1.1\textheight]{glaciar_grey.jpg}};%{aconcagua.jpg}};%fondo1.jpg
+    \draw (current page.north west)+(-2em,2em) node[anchor=north west]{\includegraphics[width=\paperwidth]{eclipse-2-final_studer.jpg}};%{aconcagua.jpg}};%fondo1.jpg
     %[remember picture,overlay]\node[opacity=0.5] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{plasma2.png}};
   \end{tikzpicture}%
 }
@@ -219,24 +216,19 @@
   \fbox{\includegraphics[height=6.em]{logo_IAFE.jpg}}}
  % Title
  {\sf\textcolor{light-gray}%{MyDarkBlue}
- {\vskip -0.2cm \bf \LARGE Temperature and Electron Density in the Inner Solar Corona:\\ a Global Validation of the AWSoM Model with Observations}}%Estudio Tomográfico Comparativo de Mínimos Solares}}
+ {\vskip -0.2cm \bf \LARGE Thermodynamics of the Inner Solar Corona: \\
+  A Tomographic Validation Study of the AWSoM Model}}
 % Authors
 { \footnotesize\sf
 {\bf \footnotesize
 \textcolor{light-gray2}{Diego G. Lloveras\afi{1}}\textcolor{MyDarkBlue}{(dlloveras@iafe.uba.ar)},
-\textcolor{light-gray2}{Cecilia Mac Cormack\afi{1,3}, Alberto M. V\'asquez\afi{3,2,1}, Federico A. Nuevo\afi{1,2},\\ Ward Manchester IV\afi{4}, Bartholomeus van der Holst \afi{4}, Richard A. Frazin\afi{4}}}\\
-%\textcolor{light-gray2}{Bartholomeus van der Holst\afi{4} ,Ward B. Manchester IV\afi{4}}}\\
+\textcolor{light-gray2}{C. Mac Cormack\afi{1}, A.M. Vásquez\afi{1}, N. Sachdeva\afi{2}, W. Manchester IV\afi{2}, B. Van der Holst\afi{2}, R.A. Frazin\afi{2}}}\\
 %\vskip 0.05cm
 \textcolor{light-gray2}{\afi{1}Instituto de Astronom\'\i a y F\'\i sica del Espacio (CONICET-UBA), CC
 67 - Suc 28, Ciudad de Buenos Aires, Argentina.\\
 %\vskip 0.05cm
-{\afi{2}Departamento de Física, Facultad de Ciencias Exactas y Naturales (UBA).}\\
-%\vskip 0.05cm
-{\afi{3}Departamento de Ciencia y Tecnolog\'ia, Universidad Nacional de Tres de Febrero (UNTREF).}\\
-{\afi{4}Department of Climate and Space Sciences and Engineering (CLaSP, University of Michigan).}
+{\afi{2}Department of Climate and Space Sciences and Engineering (CLaSP, University of Michigan).}
 \vskip -0.5cm
-%{\afi{4}Department of Climate and Space Sciences and Engineering (University of Michigan), Ann Arbor, MI, EEUU.}\\
-%\vskip 0.8cm
 }
 }
 % University logo
@@ -254,7 +246,7 @@
 
 \headerbox{{Abstract}}{name=resumen,column=0,row=0,span=4}{
 \begin{center} 
-{\sf In order to advance our understanding the physics of the solar corona and the solar wind, magnetohydrodynamic (MHD) three-dimensional (3D) models need to be validated with observations. To that end, differential emission measure tomography (DEMT) is a valuable tool to study the inner corona (1.0-1.25 Rsun). In that region DEMT provides global 3D maps of two fundamental plasma parameters: the electron density and temperature. We developed DEMT reconstructions and MHD modeling of a specific solar rotations selected from the last solar minima. The MHD simulations were carried out using the latest version of the  Alfvén Wave Solar Model (AWSoM) of the Space Weather Modeling Framework (SWMF). In this work we present the first DEMT validation study of the latest AWSoM simulations, with particular focus on different types of temperature structures observed within the streamer belt. The comparison, here focused on solar minima due to the relative simplicity of the large scale corona, will be extended in the future to periods of higher activity.}
+{\sf To advance the understanding of the physics of the solar corona, magnetohydrodynamic (MHD) three-dimensional (3D) models need to be validated with observations. To that end, differential emission measure tomography (DEMT) provides global 3D maps of the electron density and temperature in the inner corona (1.0-1.25 Rsun). In combination with models of the coronal magnetic field, it allows estimating the energy input flux required at the coronal base to maintain thermodynamically stable coronal structures. Hence, the DEMT analysis can be useful to tune up the model's Alfven wave amplitudes and dissipation rates. Here, a DEMT validation study of the latest version of the  Alfvén Wave Solar Model (AWSoM) of the Space Weather Modeling Framework (SWMF) is reported. The analysis is carried out for Carrington rotations selected from the previous solar minimum and the current declining phase of solar cycle 24. The capability of the model to reproduce the tomographic products is discussed, and the need for improvements in the model is evaluated.}
 \end{center}
 }
 
@@ -277,10 +269,10 @@ AWSoM is a global 3D MHD model of the solar chromosphere and corona driven by ma
 \begin{center}
 %\azul{\hskip 1cm Mínimo 1996 \hfill Mínimo 2009 \hskip 1cm}
 %\vskip 0.01cm
-{\includegraphics[width=0.49\textwidth]{DEMT_ne_cr2081_run5_disk_1035Rsunmapoc_2.pdf}}
-{\includegraphics[width=0.49\textwidth]{DEMT_ne_cr2081_run5_disk_1105Rsunmapoc_2.pdf}}
-{\includegraphics[width=0.49\textwidth]{AWSoM_ne_cr2081_run5_disk_1035Rsunmapoc_2.pdf}}
-{\includegraphics[width=0.49\textwidth]{AWSoM_ne_cr2081_run5_disk_1105Rsunmapoc_2.pdf}}\\
+%{\includegraphics[width=0.49\textwidth]{DEMT_ne_cr2081_run5_disk_1035Rsunmapoc_2.pdf}}
+%{\includegraphics[width=0.49\textwidth]{DEMT_ne_cr2081_run5_disk_1105Rsunmapoc_2.pdf}}
+%{\includegraphics[width=0.49\textwidth]{AWSoM_ne_cr2081_run5_disk_1035Rsunmapoc_2.pdf}}
+%{\includegraphics[width=0.49\textwidth]{AWSoM_ne_cr2081_run5_disk_1105Rsunmapoc_2.pdf}}\\
 
 %{\includegraphics[width=0.49\textwidth]{test_triplecaca3_Bbase_cerrado_est.pdf}}\\
 \end{center}
@@ -299,10 +291,10 @@ Carrington maps of the electronic density at $1.035 \, {\rm R}_\odot$ (left pane
 \begin{center}
 %\azul{\hskip 1cm Mínimo 1996 \hfill Mínimo 2009 \hskip 1cm}
 %\vskip 0.01cm
-{\includegraphics[width=0.49\textwidth]{DEMT_te_cr2081_run5_disk_1035Rsunmapoc_2.pdf}}
-{\includegraphics[width=0.49\textwidth]{DEMT_te_cr2081_run5_disk_1105Rsunmapoc_2.pdf}}
-{\includegraphics[width=0.49\textwidth]{AWSoM_te_cr2081_run5_disk_1035Rsunmapoc_2.pdf}}
-{\includegraphics[width=0.49\textwidth]{AWSoM_te_cr2081_run5_disk_1105Rsunmapoc_2.pdf}}\\
+%{\includegraphics[width=0.49\textwidth]{DEMT_te_cr2081_run5_disk_1035Rsunmapoc_2.pdf}}
+%{\includegraphics[width=0.49\textwidth]{DEMT_te_cr2081_run5_disk_1105Rsunmapoc_2.pdf}}
+%{\includegraphics[width=0.49\textwidth]{AWSoM_te_cr2081_run5_disk_1035Rsunmapoc_2.pdf}}
+%{\includegraphics[width=0.49\textwidth]{AWSoM_te_cr2081_run5_disk_1105Rsunmapoc_2.pdf}}\\
 \end{center}
 }
 }
@@ -315,8 +307,8 @@ $Q_i\,\equiv\,2\,\frac{|X_{\rm AWSoM} - X_{\rm DEMT}|}{(X_{\rm AWSoM} + X_{\rm D
 \begin{center}
 %\azul{\hskip 1cm Mínimo 1996 \hfill Mínimo 2009 \hskip 1cm}
 %\vskip 0.01cm
-{\includegraphics[width=0.45\textwidth]{Median_Ne_full_height_run5_disk.pdf}}
-{\includegraphics[width=0.45\textwidth]{Median_Te_full_height_run5_disk.pdf}}\\
+%{\includegraphics[width=0.45\textwidth]{Median_Ne_full_height_run5_disk.pdf}}
+%{\includegraphics[width=0.45\textwidth]{Median_Te_full_height_run5_disk.pdf}}\\
 \end{center}
 \vskip -0.16cm
 Median value of ${\rm Q_i}$ at every height for ${\rm N_e}$ and ${\rm T_e}$ within the Streamer and each polar Coronal Hole.
@@ -331,10 +323,10 @@ The DEMT and AWSoM results are then traced along each magnetic field line obtain
 \begin{center}
 %\azul{\hskip 1cm Mínimo 1996 \hfill Mínimo 2009 \hskip 1cm}
 %\vskip 0.01cm
-{\includegraphics[width=0.49\textwidth]{ajuste_promedio_ne_lowlat_colage_testeo.pdf}}
-{\includegraphics[width=0.49\textwidth]{ajuste_promedio_ne_chs_colage_testeo.pdf}}\\
-{\includegraphics[width=0.49\textwidth]{ajuste_promedio_te_lowlat_colage_testeo.pdf}}
-{\includegraphics[width=0.49\textwidth]{ajuste_promedio_te_chs_colage_testeo_3.pdf}}\\
+%{\includegraphics[width=0.49\textwidth]{ajuste_promedio_ne_lowlat_colage_testeo.pdf}}
+%{\includegraphics[width=0.49\textwidth]{ajuste_promedio_ne_chs_colage_testeo.pdf}}\\
+%{\includegraphics[width=0.49\textwidth]{ajuste_promedio_te_lowlat_colage_testeo.pdf}}
+%{\includegraphics[width=0.49\textwidth]{ajuste_promedio_te_chs_colage_testeo_3.pdf}}\\
 \end{center}
 DEMT fits in solid blue lines. The dashed blue lines indicate the uncertainty (Lloveras {\rm et al.} 2017). In red lines AWSoM fits below $1.05 \, {\rm R}_\odot$ and above $1.05 \, {\rm R}_\odot$.
 
@@ -347,10 +339,10 @@ DEMT fits in solid blue lines. The dashed blue lines indicate the uncertainty (L
 \begin{center}
 %\azul{\hskip 1cm Mínimo 1996 \hfill Mínimo 2009 \hskip 1cm}
 %\vskip 0.01cm
-{\includegraphics[width=0.4\textwidth]{histoplot2_fullne_lowlat_colage.pdf}}
-{\includegraphics[width=0.4\textwidth]{histoplot2_fullne_chs_colage.pdf}}\\
-{\includegraphics[width=0.4\textwidth]{histoplot2_fulltm_lowlat_colage.pdf}}
-{\includegraphics[width=0.4\textwidth]{histoplot2_fulltm_chs_colage.pdf}}\\
+%{\includegraphics[width=0.4\textwidth]{histoplot2_fullne_lowlat_colage.pdf}}
+%{\includegraphics[width=0.4\textwidth]{histoplot2_fullne_chs_colage.pdf}}\\
+%{\includegraphics[width=0.4\textwidth]{histoplot2_fulltm_lowlat_colage.pdf}}
+%{\includegraphics[width=0.4\textwidth]{histoplot2_fulltm_chs_colage.pdf}}\\
 \end{center}
 \vskip -0.16cm
 Frequency histograms of ${\rm N_{e basal}}$ and ${\rm \langle T_e \rangle}$ (above $1.05 \, {\rm R}_\odot$) for the Streamer and the polar Coronal Holes.
@@ -374,12 +366,3 @@ Frequency histograms of ${\rm N_{e basal}}$ and ${\rm \langle T_e \rangle}$ (abo
 
 \end{poster}%
 \end{document}
-
-% EJEMPLO DE CAJA EN BLANCO:
-\headerbox{Nothing Meaningful}{name=references,column=2,below=scatter}{
-There is nothing in here....
-}%headerbox
-\headerbox{References}{name=references,column=2,below=maps}{
-Something...
-\vskip 0.1cm
-}%headerbox

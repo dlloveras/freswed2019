@@ -2,7 +2,7 @@ ABSTRACT for freswed2019
 
 POSTER
 
-Author: D.G. Lloveras(1), C. Mac Cormack(19, A.M. Vásquez(1), N. Sachdeva(2), W. Manchester IV(2), B. Van der Holst(2), R.A. Frazin(2).
+Author: D.G. Lloveras(1), C. Mac Cormack(1), A.M. Vásquez(1), N. Sachdeva(2), W. Manchester IV(2), B. Van der Holst(2), R.A. Frazin(2).
 
 (1) IAFE (UBA-CONICET), Ciudad Autonoma de Buenos Aires, Argentina.
 (2) CLaSP (Univ. of Michigan), Ann Arbor - Michigan, EEUU.
