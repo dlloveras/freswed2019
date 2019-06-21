@@ -299,63 +299,48 @@ Carrington maps at $1.105\, {\rm R}_\odot$  of CR-2082. At top electronic densit
 {\includegraphics[width=0.49\textwidth]{map_Er_CR2208_DEMT-EUVI_behind_H1-L502020_r3d_1105_Rsun.pdf}}
 {\includegraphics[width=0.49\textwidth]{map_ratio_qrad_awsom_2208_185-Er_CR2208_DEMT-EUVI_behind_H1-L502020_r3d_1105_Rsun.pdf}}\\
 \end{center}
-Same Carrington mapsbut for CR-2208.
+Same Carrington maps but for CR-2208.
 }
 }
 
-\headerbox{Global Comparison as a Function of Height}
+\headerbox{Global Comparison as a Function of Height: Streamer}
 {name=alturas,column=0,below=maps2,span=2}{
 {\footnotesize\sf
-For each physical quantity $X$, we measure its relative difference between the AWSoM and DEMT results at each coronal computational cell $i$ as: 
-$Q_i\,\equiv\,2\,\frac{|X_{\rm AWSoM} - X_{\rm DEMT}|}{(X_{\rm AWSoM} + X_{\rm DEMT})}$.
 \begin{center}
-%\azul{\hskip 1cm Mínimo 1996 \hfill Mínimo 2009 \hskip 1cm}
-%\vskip 0.01cm
-%{\includegraphics[width=0.45\textwidth]{Median_Ne_full_height_run5_disk.pdf}}
-%{\includegraphics[width=0.45\textwidth]{Median_Te_full_height_run5_disk.pdf}}\\
+\azul{\hskip 3.5cm CR2082 \hfill CR2208 \hskip 3.5cm}
+\vskip 0.01cm
+{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Ne_awsom_vs_demt_H_cr2082_ratio_streamer.pdf}}
+{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Ne_awsom_vs_demt_H_cr2208_ratio_streamer.pdf}}\\
+{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Te_awsom_vs_demt_H_cr2082_ratio_streamer.pdf}}
+{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Te_awsom_vs_demt_H_cr2208_ratio_streamer.pdf}}\\
+{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Er_awsom_vs_demt_H_cr2082_ratio_streamer.pdf}}
+{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Er_awsom_vs_demt_H_cr2208_ratio_streamer.pdf}}\\
 \end{center}
 \vskip -0.16cm
-Median value of ${\rm Q_i}$ at every height for ${\rm N_e}$ and ${\rm T_e}$ within the Streamer and each polar Coronal Hole.
 
 }
 }
 
-\headerbox{Average Fitts to ${\rm N_e}$ and ${\rm T_{e}}$ along loops}
+\headerbox{Radiative Flux statistic in streamer}
 {name=ajuste1,column=2,below=maps3,span=2}{
 {\footnotesize\sf
-The DEMT and AWSoM results are then traced along each magnetic field line obtained with AWSoM model allowing a detailed thermodynamic comparison along the magnetic field. Using a hydrostatic fit for density and a linear fit for the temperature, the coronal basal density ${\rm N_{e basal}}$ (density at $1.025 \, {\rm R}_\odot$) and the mean electronic temperature ${\langle \rm T_e \rangle}$ are determined for each field line.
 \begin{center}
-%\azul{\hskip 1cm Mínimo 1996 \hfill Mínimo 2009 \hskip 1cm}
+\azul{\hskip 3.5cm CR2082 \hfill CR2208 \hskip 3.0cm}
 %\vskip 0.01cm
-%{\includegraphics[width=0.49\textwidth]{ajuste_promedio_ne_lowlat_colage_testeo.pdf}}
-%{\includegraphics[width=0.49\textwidth]{ajuste_promedio_ne_chs_colage_testeo.pdf}}\\
-%{\includegraphics[width=0.49\textwidth]{ajuste_promedio_te_lowlat_colage_testeo.pdf}}
-%{\includegraphics[width=0.49\textwidth]{ajuste_promedio_te_chs_colage_testeo_3.pdf}}\\
+{\includegraphics[width=0.49\textwidth]{comparison_Er_awsom_vs_demt_H_cr2082_ratio_streamer_ratio_range1055-1250_Rsun.pdf}}
+{\includegraphics[width=0.49\textwidth]{comparison_Er_awsom_vs_demt_H_cr2208_ratio_streamer_ratio_range1055-1250_Rsun.pdf}}\\
 \end{center}
-DEMT fits in solid blue lines. The dashed blue lines indicate the uncertainty (Lloveras {\rm et al.} 2017). In red lines AWSoM fits below $1.05 \, {\rm R}_\odot$ and above $1.05 \, {\rm R}_\odot$.
-
 }
 }
-
-\headerbox{Statistical Comparison}
-{name=histo,column=0,below=alturas,span=2}{
+\headerbox{Coments}
+{name=coments,column=2,below=ajuste1,span=2}{
 {\footnotesize\sf
-\begin{center}
-%\azul{\hskip 1cm Mínimo 1996 \hfill Mínimo 2009 \hskip 1cm}
-%\vskip 0.01cm
-%{\includegraphics[width=0.4\textwidth]{histoplot2_fullne_lowlat_colage.pdf}}
-%{\includegraphics[width=0.4\textwidth]{histoplot2_fullne_chs_colage.pdf}}\\
-%{\includegraphics[width=0.4\textwidth]{histoplot2_fulltm_lowlat_colage.pdf}}
-%{\includegraphics[width=0.4\textwidth]{histoplot2_fulltm_chs_colage.pdf}}\\
-\end{center}
-\vskip -0.16cm
-Frequency histograms of ${\rm N_{e basal}}$ and ${\rm \langle T_e \rangle}$ (above $1.05 \, {\rm R}_\odot$) for the Streamer and the polar Coronal Holes.
-
+\bu diferencias observadas
 }
 }
 
-\headerbox{Conclusions}
-{name=conclusions,column=2,below=ajuste1,span=2}{
+\headerbox{Next step}
+{name=conclusions,column=2,below=coments,span=2}{
 {\footnotesize\sf
 \bu Below $r \sim 1.05 {\rm R_{SUN}}$, the electron temperatures of AWSoM are a factor $\sim 2$ smaller than those observed with DEMT, while the electron densities are a factor $\sim 2-5$ larger.
 
