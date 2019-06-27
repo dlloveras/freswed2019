@@ -250,9 +250,9 @@
 \end{center}
 }
 
-\headerbox{DEMT Technique}{name=demt2,column=0,below=resumen,span=2}{
+\headerbox{DEMT}{name=demt2,column=0,below=resumen,span=2}{
 {\footnotesize\sf
-DEMT technique calculates the Local Differential Emission Measure (LDEM) in each 3D volume element from series of EUV images taken during a solar rotation. By computing LDEM moments, 3D distributions of electronic density and temperature can be obtained. In this work DEMT was applied to EUV (Extreme Ultraviolet) images taken by the Extreme Ultraviolet Imager (EUVI) instrument on board the STEREO-B spacecraft during Carrington Rotation (CR)-2082 and by Atmospheric Imaging Assembly (AIA) instrument on board SDO during CR-2208.
+DEMT technique allows calculation of the Local Differential Emission Measure (LDEM) in each voxel of the tomographic grid from series of EUV images taken during hafl of a solar rotation. By computing LDEM moments, 3D distributions of electronic density and temperature can be obtained. In this work DEMT was applied to EUV (Extreme Ultraviolet) images taken by the Extreme Ultraviolet Imager (EUVI) instrument on board the STEREO-B spacecraft during Carrington Rotation (CR)-2082, and by Atmospheric Imaging Assembly (AIA) instrument on board the SDO spacecraft during CR-2208.
 
 }
 }
@@ -263,7 +263,7 @@ AWSoM is a global 3D MHD model of the solar chromosphere and corona driven by ma
 }
 }
 
-\headerbox{CR-2082}
+\headerbox{Results for CR-2082}
 {name=maps2,column=0,below=demt2,span=2}{
 %\azul{ \hskip 2.4cm CR-1915 \hskip 3.0cm CR-2081 \hskip 3.1cm CR-2192 }
 \begin{center}
@@ -280,11 +280,11 @@ AWSoM is a global 3D MHD model of the solar chromosphere and corona driven by ma
 \end{center}
 \vskip -0.16cm
 {\footnotesize\sf
-Carrington maps at $1.105\, {\rm R}_\odot$ of CR-2082. On the left, electronic density, electronic temperature and radiaty power and at the right the ratio between AWSoM and DEMT of those quantities.
+Carrington maps of several DEMT and AWSoM products at $1.105\, {\rm R}_\odot$ for CR-2082.{\bf Left Panels:} electronic density, electronic temperature and radiative power.{\bf Right Panels:} the ratio between AWSoM and DEMT of those quantities.
 }
 }
 
-\headerbox{CR-2208}
+\headerbox{Results for CR-2208}
 {name=maps3,column=2,below=awsom,span=2}{
 {\footnotesize\sf
 %\azul{ \hskip 2.4cm CR-1915 \hskip 3.0cm CR-2081 \hskip 3.1cm CR-2192 }
@@ -303,57 +303,57 @@ Same Carrington maps but for CR-2208.
 }
 }
 
-\headerbox{Global Comparison as a Function of Height in Streamer}
+\headerbox{Global Comparison as a Function of Height in Streamers}
 {name=alturas,column=0,below=maps2,span=2}{
 {\footnotesize\sf
 \begin{center}
 \azul{\hskip 3.5cm CR2082 \hfill CR2208 \hskip 3.5cm}
 \vskip 0.01cm
-{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Ne_awsom_vs_demt_H_cr2082_ratio_streamer.pdf}}
-{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Ne_awsom_vs_demt_H_cr2208_ratio_streamer.pdf}}\\
-{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Te_awsom_vs_demt_H_cr2082_ratio_streamer.pdf}}
-{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Te_awsom_vs_demt_H_cr2208_ratio_streamer.pdf}}\\
-{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Er_awsom_vs_demt_H_cr2082_ratio_streamer.pdf}}
-{\includegraphics[width=0.4\textwidth]{Average_Radial_Profiles_Er_awsom_vs_demt_H_cr2208_ratio_streamer.pdf}}\\
+{\includegraphics[width=0.37\textwidth]{Average_Radial_Profiles_Ne_awsom_vs_demt_H_cr2082_ratio_streamer.pdf}}
+{\includegraphics[width=0.37\textwidth]{Average_Radial_Profiles_Ne_awsom_vs_demt_H_cr2208_ratio_streamer.pdf}}\\
+{\includegraphics[width=0.37\textwidth]{Average_Radial_Profiles_Te_awsom_vs_demt_H_cr2082_ratio_streamer.pdf}}
+{\includegraphics[width=0.37\textwidth]{Average_Radial_Profiles_Te_awsom_vs_demt_H_cr2208_ratio_streamer.pdf}}\\
+{\includegraphics[width=0.37\textwidth]{Average_Radial_Profiles_Er_awsom_vs_demt_H_cr2082_ratio_streamer.pdf}}
+{\includegraphics[width=0.37\textwidth]{Average_Radial_Profiles_Er_awsom_vs_demt_H_cr2208_ratio_streamer.pdf}}\\
 \end{center}
 \vskip -0.16cm
 
 }
 }
 
-\headerbox{Radiative Flux in streamer}
+\headerbox{Radiative Flux in streamers}
 {name=ajuste1,column=2,below=maps3,span=2}{
 {\footnotesize\sf
 \begin{center}
 \azul{\hskip 3.5cm CR2082 \hfill CR2208 \hskip 3.0cm}
 %\vskip 0.01cm
-{\includegraphics[width=0.49\textwidth]{comparison_Er_awsom_vs_demt_H_cr2082_ratio_streamer_ratio_range1055-1250_Rsun.pdf}}
-{\includegraphics[width=0.49\textwidth]{comparison_Er_awsom_vs_demt_H_cr2208_ratio_streamer_ratio_range1055-1250_Rsun.pdf}}\\
+{\includegraphics[width=0.4\textwidth]{comparison_Er_awsom_vs_demt_H_cr2082_ratio_streamer_ratio_range1055-1250_Rsun.pdf}}
+{\includegraphics[width=0.4\textwidth]{comparison_Er_awsom_vs_demt_H_cr2208_ratio_streamer_ratio_range1055-1250_Rsun.pdf}}\\
 \end{center}
-Statistic of the ratio of the radiaty power above the end of the extended transition region.
+Histogram of the AWSoM-to-DEMT ratio of the radiative power, in the height range $1.05-1.26\,\rm{R}_{\odot}$.
 }
 }
 \headerbox{Comments}
 {name=comments,column=2,below=ajuste1,span=2}{
 {\footnotesize\sf
-\bu A previous work showed that below $\sim 1.05 {\rm R_{SUN}}$ (in both Streamers and CHs): the electron temperatures of AWSoM are a factor $\sim 2$ smaller than those observed with DEMT, while the electron densities are a factor $\sim 2-5$ large. This lack of agreement is related to the AWSoM treatment of the extended Chromosphere/Corona transition.
+\bu As in a previous analysis below $\sim 1.05 {\rm R_{SUN}}$ the electron temperatures of AWSoM are a factor $\sim 2$ smaller than those observed with DEMT, while the electron densities are a factor $\sim 2-5$ large. This lack of agreement is related to the AWSoM treatment of the extended Chromosphere/Corona transition.
 
-\bu Above $\sim 1.05 {\rm R_{SUN}}$ AWSoM tend to under-estimate (in both Streamers and CHs) ${\rm N_e}$ and ${\rm T_e}$ $< 20 \%$
+\bu Above $\sim 1.05 {\rm R_{SUN}}$ AWSoM tends to under-estimate (in both Streamers and CHs) ${\rm N_e}$ and ${\rm T_e}$ by $\lessapprox\,20\%$
 
 %\bu The structure of the streamer is dominated by down loops which are not modeled by AWSoM.
 
-\bu Since Radiative power ${\rm E_r}\sim {\rm N_e}^2 {\rm LF}$ and the behavior is dominated by ${\rm N_e}$ then the radiative loss function is the same for both models.
+\bu Since Radiative power ${\rm E_r}\sim {\rm N_e}^2 {\rm LF}$ and the LF is similarly treated by both models (using same version of CHIANTI), the AWSoM-to-DEMT ratio of the radiative power closely matches that of the ${\rm N_e}^2$.
 }
 }
 
-\headerbox{Next steps}
+\headerbox{Next Steps}
 {name=conclusions,column=2,below=comments,span=2}{
 {\footnotesize\sf
-\bu ${\rm N_e}^ {DEMT}$ need to be corrected by the irregularity factor, see the poster "Multi-Instrumental Tomography of the Solar Corona" (by Alberto Vásquez) in this same session.
+\bu The DEMT electron density may require corrections due to the unknown [Fe] and the coronal irregularity factor. See the poster "Multi-Instrumental Tomography of the Solar Corona", by Frazin et al., in this same poster session.
 
-\bu We will analyze a newer rotation closer to the solar minima.
+\bu We will repeat the same type of analaysis for a rotation selected from the current solar minimum between Solar Cycles 24 and 25.
 
-\bu A more detailed and precise analysis tracing the DEMT and AWSoM data along the magnetic lines will be carried out.
+\bu A more detailed and precise analysis tracing the DEMT and AWSoM data along the magnetic lines will be carried out to validate AWSoM separately in specific coronal structures.
 
 }
 }
